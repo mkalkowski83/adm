@@ -5,12 +5,12 @@ namespace Adm;
 
 final class InsertionSort
 {
-    public function sort(array &$s): void
+    public function sort(array &$arrayToSort): void
     {
-        $count = count($s);
-        for ($i = 1, $n = $count; $i < $n; $i++) {
-            for ($j = $i; $j > 0 && $s[$j] < $s[$j - 1]; $j--) {
-                [$s[$j], $s[$j - 1]] = [$s[$j - 1], $s[$j]];
+        $elementsInArray = count($arrayToSort);
+        for ($i = 1, $n = $elementsInArray; $i < $n; $i++) {
+            for ($j = $i; $j > 0 && $arrayToSort[$j] < $arrayToSort[$j - 1]; $j--) {
+                [$arrayToSort[$j], $arrayToSort[$j - 1]] = [$arrayToSort[$j - 1], $arrayToSort[$j]];
             }
         }
     }
