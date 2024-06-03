@@ -38,3 +38,5 @@ This will install build docker image, up container and install all dependencies.
   make test
   ```
 
+# Table of Contents
+ * [Movie Scheduling Problem](docs/MovieSchedulingProblem.md)
